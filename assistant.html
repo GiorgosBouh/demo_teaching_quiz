@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d43">
+  <meta name="description" content="Ρώτησε τον βιβλιογραφικό βοηθό Ειδικής Φυσικής Αγωγής και δες τις πηγές πίσω από κάθε απάντηση.">
+  <title>Βιβλιογραφικός βοηθός · Ειδική Φυσική Αγωγή</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./assistant.css">
+  <script type="module" src="./assistant.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Στο περιεχόμενο</a>
+  <header class="site-header"><a class="brand" href="./">Ειδική Φυσική Αγωγή</a><span>ΤΕΦΑΑ ΑΠΘ</span></header>
+  <main id="main" class="assistant-page" tabindex="-1">
+    <p class="eyebrow">Pilot B · Βιβλιογραφικός βοηθός</p>
+    <h1>Ρώτησε για την έρευνα.</h1>
+    <p class="assistant-intro">Διάλεξε ένα θέμα ή γράψε τη δική σου ερώτηση. Ο βοηθός αναζητά στις ελεγμένες βιβλιογραφικές σημειώσεις και εμφανίζει τις σχετικές πηγές.</p>
+
+    <section class="question-starters" aria-labelledby="starter-title">
+      <h2 id="starter-title">Μπορείς να ξεκινήσεις από εδώ</h2>
+      <div class="starter-grid">
+        <button class="starter" type="button" data-question="Τι κινητικά, ψυχολογικά και κοινωνικά οφέλη αναφέρει η βιβλιογραφία για τη φυσική δραστηριότητα ατόμων με αναπηρία;" data-fallback="benefits">Οφέλη πέρα από την κίνηση</button>
+        <button class="starter" type="button" data-question="Πώς θα μπορούσε να προσαρμοστεί ένα παιχνίδι πάσας για μαθητή με αναπηρικό αμαξίδιο στο γενικό σχολείο; Τι στηρίζεται σε έρευνα και τι είναι διδακτική πρόταση;" data-fallback="wheelchair">Παράδειγμα με αμαξίδιο</button>
+        <button class="starter" type="button" data-question="Τι αναφέρει η βιβλιογραφία για τη συμπερίληψη στο μάθημα της Φυσικής Αγωγής και τις στάσεις των μαθητών ή εκπαιδευτικών;" data-fallback="inclusion">Συμπερίληψη στο μάθημα</button>
+        <button class="starter" type="button" data-question="Ποιοι είναι οι βασικοί περιορισμοί της έρευνας για την Ειδική Φυσική Αγωγή και τα οφέλη της;" data-fallback="limits">Όρια των διαθέσιμων ερευνών</button>
+      </div>
+    </section>
+
+    <form id="ask-form" class="ask-form">
+      <label for="question">Η ερώτησή σου</label>
+      <textarea id="question" name="question" rows="3" maxlength="900" placeholder="Γράψε μια σύντομη ερώτηση…" required></textarea>
+      <div class="ask-controls"><span id="char-count">0 / 900</span><button id="ask" class="primary" type="submit">Ρώτησε τον βοηθό</button></div>
+    </form>
+
+    <p id="status" class="assistant-status" role="status" aria-live="polite">Οι προτεινόμενες ερωτήσεις έχουν και εφεδρικές, ελεγμένες απαντήσεις για την παρουσίαση.</p>
+    <section id="answer-panel" class="answer-panel" aria-labelledby="answer-title" hidden>
+      <p id="answer-label" class="answer-label"></p>
+      <h2 id="answer-title">Απάντηση</h2>
+      <div id="answer-text" class="answer-text"></div>
+      <div id="sources-block" class="answer-sources" hidden><h3>Πηγές που χρησιμοποιήθηκαν</h3><ul id="source-list"></ul></div>
+    </section>
+
+    <aside class="assistant-note">
+      <h2>Πώς να διαβάζεις την απάντηση</h2>
+      <p>Το εργαλείο είναι βοήθημα μελέτης, όχι αυθεντία. Ξεχωρίζει τα ευρήματα των μελετών από πρακτικές διδακτικές προτάσεις και επισημαίνει όταν η βιβλιογραφία δεν αρκεί για ασφαλές συμπέρασμα. Οι πλήρεις δημοσιεύσεις δεν ανεβαίνουν στη σελίδα· χρησιμοποιούνται σύντομες, ελεγμένες βιβλιογραφικές σημειώσεις.</p>
+    </aside>
+    <p class="assistant-back"><a href="./">Επιστροφή στο quiz</a></p>
+  </main>
+  <footer class="site-footer"><span>Λειτουργικότητα, αυτονομία και ουσιαστική συμμετοχή.</span><a href="./share.html">QR για το quiz</a></footer>
+</body>
+</html>
