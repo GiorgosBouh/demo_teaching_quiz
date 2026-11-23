@@ -11,5 +11,3 @@ details{border-top:1px solid var(--line);border-bottom:1px solid var(--line);pad
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 @media print{.site-header,.site-footer,#restart,#intro,#quiz{display:none}main{width:100%;margin:0}.review-item{break-inside:avoid}.primary{display:none}}
 
-.footer-links{display:flex;gap:18px;align-items:center}.assistant-launch{margin-left:14px}
-@media(max-width:600px){.footer-links{flex-direction:column;align-items:flex-start;gap:8px}.assistant-launch{width:100%;margin:14px 0 0}}
