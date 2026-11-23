@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d43">
+  <meta name="description" content="7 ερωτήσεις αυτοαξιολόγησης στην Ειδική Φυσική Αγωγή, με βοήθεια και αιτιολόγηση κάθε επιλογής.">
+  <title>Quiz Ειδικής Φυσικής Αγωγής</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Στο περιεχόμενο</a>
+  <header class="site-header"><a class="brand" href="./">Ειδική Φυσική Αγωγή</a><span>ΤΕΦΑΑ ΑΠΘ</span></header>
+  <main id="main" tabindex="-1">
+    <section id="intro" class="intro" aria-labelledby="intro-title">
+      <p class="eyebrow">Αυτοαξιολόγηση μετά το μάθημα</p>
+      <h1 id="intro-title">Από τη γνώση<br>στη συμμετοχή.</h1>
+      <p class="intro-copy">Πώς συνδέεται η Ειδική Φυσική Αγωγή με τη λειτουργικότητα και την αυτονομία; Δοκίμασε όσα έμαθες σε 7 μικρές ερωτήσεις.</p>
+      <p class="quiz-meta">7 ερωτήσεις <span aria-hidden="true">·</span> Μία σωστή επιλογή σε καθεμία <span aria-hidden="true">·</span> Περίπου 5 λεπτά</p>
+      <button id="start" class="primary" type="button">Ξεκίνα το quiz</button>
+      <p class="intro-note">Θα βρεις μια μικρή βοήθεια σε κάθε ερώτηση και εξήγηση μετά την απάντησή σου. Μπορείς να επαναλάβεις το quiz όσες φορές θέλεις.</p>
+      <p class="teacher">Γεώργιος Μπουχουράς</p>
+    </section>
+    <section id="quiz" hidden aria-labelledby="question-title">
+      <div class="progress-copy"><span id="question-counter"></span><span id="topic"></span></div>
+      <progress id="progress" max="7" value="0" aria-label="Απαντημένες ερωτήσεις"></progress>
+      <form id="question-form">
+        <fieldset id="question-fieldset"><legend id="question-title" tabindex="-1"></legend><p id="question-context" class="context"></p><div id="options" class="options"></div></fieldset>
+        <details id="hint"><summary>Μικρή βοήθεια</summary><p id="hint-text"></p></details>
+        <button id="check" class="primary" type="submit" disabled>Έλεγχος απάντησης</button>
+      </form>
+      <div id="feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true" hidden><h2 id="feedback-title"></h2><p id="feedback-text"></p><p id="correct-answer" hidden></p></div>
+      <button id="next" class="primary" type="button" hidden>Επόμενη ερώτηση</button>
+    </section>
+    <section id="results" hidden aria-labelledby="results-title">
+      <p class="eyebrow">Ολοκλήρωσες το quiz</p><h1 id="results-title" tabindex="-1">Ας δούμε τι κρατάμε.</h1>
+      <p class="score"><strong id="score-value"></strong><span>σωστές απαντήσεις</span></p>
+      <p id="result-message"></p><button id="restart" class="primary" type="button">Νέα προσπάθεια</button>
+      <div class="review-heading"><h2>Οι απαντήσεις, με εξήγηση</h2><p>Άνοιξε κάθε ερώτηση για να δεις γιατί μια επιλογή είναι σωστή ή λανθασμένη.</p></div>
+      <div id="review"></div>
+      <details class="sources"><summary>Πηγές και σύνδεση με το μάθημα</summary><div id="sources-list"></div></details>
+    </section>
+    <noscript><p class="noscript">Για το διαδραστικό quiz χρειάζεται να ενεργοποιήσεις τη JavaScript στον browser σου.</p></noscript>
+  </main>
+  <footer class="site-footer"><span>Λειτουργικότητα, αυτονομία και ουσιαστική συμμετοχή.</span><a href="./share.html">QR για το quiz</a></footer>
+</body>
+</html>
